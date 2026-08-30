@@ -19,7 +19,7 @@
 
 ### 随机
 
-默认每次只提交 1 次，绿块都为浅绿。若想让贴瓷砖有深浅变化，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中新增变量：
+默认每次只提交 1 次，记录都为浅绿。如果想让贴瓷砖有深浅变化，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中新增变量：
 
 | 变量名 | 取值 | 说明 |
 | --- | --- | --- |
