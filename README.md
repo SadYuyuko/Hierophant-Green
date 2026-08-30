@@ -1,6 +1,6 @@
-# auto-green
+# Github-auto-green
 
-自动保持 GitHub 提交状态常绿。
+自动保持 GitHub 提交状态常绿（贴瓷砖）。
 
 > A commit a day keeps life green.
 
@@ -11,18 +11,18 @@
 
 ## 使用
 
-- 点右上角 **Use this template** 按钮复制本 GitHub 仓库，**:warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning:**
+- 点右上角 **Use this template** 按钮复制本 GitHub 仓库 **:warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning:**
 - 修改 [ci.yml 文件的第 7、8 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L7-L8) 去掉前面的 `#` 号
-- 修改 [ci.yml 文件的第 21、22 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L21-L22) 为自己的 GitHub 账号和昵称
+- 修改 [ci.yml 文件的第 21、22 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L21-L22) 为自己的 GitHub 账号和昵称。由于commit记录默认可见，推荐账号填`数字+你的用户名@users.noreply.github.com`的github隐私邮箱而不是个人邮箱
 - (可选) 修改 [ci.yml 文件的第 8 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L8) 开启随机提交数量（1~10），使绿块有深浅变化
 
 ### 随机
 
-默认每次只提交 1 次，颜色较浅。若想让贡献图有深有浅，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中新增变量：
+默认每次只提交 1 次，绿块都为浅绿。若想让贴瓷砖有深浅变化，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中新增变量：
 
 | 变量名 | 取值 | 说明 |
 | --- | --- | --- |
-| `RANDOM_COMMIT` | `0` / `1` | `1` 时每次随机提交 1~10 次，颜色深浅随机；`0` 或未设置时保持原样（默认） |
+| `RANDOM_COMMIT` | `0` / `1` | `0` 或未设置时默认保持原样，改为 `1` 时每次随机提交 1~10 次，颜色深浅随机 |
 
 ## 频率
 
