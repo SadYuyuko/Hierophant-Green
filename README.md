@@ -14,15 +14,17 @@
 - 点右上角 **Use this template** 按钮复制本 GitHub 仓库，**:warning: 千万不要 Fork，因为 fork 项目的动态并不会让你变绿 :warning:**
 - 修改 [ci.yml 文件的第 7、8 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L7-L8) 去掉前面的 `#` 号
 - 修改 [ci.yml 文件的第 21、22 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L21-L22) 为自己的 GitHub 账号和昵称
-- (可选) 你可以通过修改 [ci.yml 文件的第 8 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L8)来调整频率
+- (可选) 修改 [ci.yml 文件的第 8 行](https://github.com/SadYuyuko/Hierophant-Green/blob/master/.github/workflows/ci.yml#L8) 开启随机提交数量（1~10），使绿块有深浅变化
 
-### 随机提交数量（深浅变化）
+### 随机
 
 默认每次只提交 1 次，颜色较浅。若想让贡献图有深有浅，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中新增变量：
 
 | 变量名 | 取值 | 说明 |
 | --- | --- | --- |
 | `RANDOM_COMMIT` | `0` / `1` | `1` 时每次随机提交 1~10 次，颜色深浅随机；`0` 或未设置时保持原样（默认） |
+
+## 频率
 
 计划任务语法有 5 个字段，中间用空格分隔，每个字段代表一个时间单位。
 
@@ -48,7 +50,3 @@
 | `/`   | 每         | `*/15 * * * *` 每隔 15 分钟                  |
 
 **注**：由于 GitHub Actions 的限制，如果设置为 `* * * * *` 实际的执行频率为每 5 分执行一次。
-
-## License
-
-[Hierophant-Green](https://github.com/SadYuyuko/Hierophant-Green) is released under the MIT License. See the bundled [LICENSE](./LICENSE) file for details.
